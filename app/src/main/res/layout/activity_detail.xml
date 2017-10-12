@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#f9cbda"
+	tools:context="cc.fadhil.aplikasiresep.Detail">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:minHeight="?attr/actionBarSize"
+		android:background="#FF4081">
+		<ImageView
+			android:id="@+id/iv_back"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:src="@drawable/back_button"
+			android:layout_gravity="center"
+			android:focusableInTouchMode="true"/>
+
+		<ImageView
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_gravity="center"
+			android:layout_marginLeft="15dp"
+			android:layout_marginRight="5dp"
+			android:src="@mipmap/ichep"/>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Resep Mama"
+			android:layout_marginLeft="10dp"
+			android:textStyle="bold"
+			android:layout_gravity="center_vertical"
+			android:textColor="#ffffff"
+			android:textSize="28sp"/>
+	</LinearLayout>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/tv_detail_judul"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="10dp"
+				android:gravity="center_horizontal"
+				android:text="SAYUR BAYAM"
+				android:textSize="30sp"/>
+
+			<ImageView
+				android:id="@+id/iv_detail_gambar"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:src="@drawable/bayam"/>
+
+			<LinearLayout
+				android:id="@+id/line_alatbahan"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:background="@drawable/wikipedia_klik"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/tv_detail_t_alatbahan"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="@drawable/wikipedia_klik"
+					android:drawableRight="@drawable/panah_bawah"
+					android:padding="10dp"
+					android:text="Alat &amp; Bahan"
+					android:textColor="#000"
+					android:textSize="22sp"/>
+
+				<TextView
+					android:id="@+id/tv_detail_alatbahan"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:paddingBottom="10dp"
+					android:paddingLeft="10dp"
+					android:textSize="18sp"
+					android:visibility="gone"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/line_caramasak"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:background="@drawable/wikipedia_klik"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/tv_detail_t_caramasak"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="@drawable/wikipedia_klik"
+					android:drawableRight="@drawable/panah_bawah"
+					android:padding="10dp"
+					android:text="Cara Masak"
+					android:textColor="#000"
+					android:textSize="22sp"/>
+
+				<TextView
+					android:id="@+id/tv_detail_caramasak"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:paddingBottom="10dp"
+					android:paddingLeft="10dp"
+					android:textSize="18sp"
+					android:visibility="gone"/>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
